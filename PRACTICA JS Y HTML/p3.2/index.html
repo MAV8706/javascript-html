@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>              
+
+<head>
+	
+	 <meta charset="UTF-8">
+	 
+     <title> Práctica 3.2 Javascript </title>
+
+</head>
+
+<body>
+	
+	<input type="button" onClick="contarClicks()" value="Haz click aquí!">
+	
+	<p id="contador"> Contador </p>
+		
+	<script type="text/javascript">
+	
+		var contador = 0;
+		
+		var cont = document.getElementById("contador");
+		
+		contarClicks();
+		
+		function contarClicks()
+		{			
+			cont.innerHTML = "Haz hecho " + contador + " click(s) en el botón!";	
+
+			contador = contador + 1;			
+		}
+		
+	</script>
+                  
+</body>
+
+</html>

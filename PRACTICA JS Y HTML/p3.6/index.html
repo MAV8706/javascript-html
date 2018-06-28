@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>              
+
+<head>
+	
+	 <meta charset="UTF-8">
+	 
+	 <link href="style.css" type="text/css" rel="stylesheet">
+	 
+     <title> Práctica 3.6 Javascript </title>
+
+</head>
+
+<body>
+
+    <div id="div1" class="div-style" onmouseover=cambiarBgColorRojo() onmouseout=cambiarBgColorNegro()>    
+
+    </div>
+	
+    <div id="div2" class="div-style" onmouseover=cambiarBgColorRojo() onmouseout=cambiarBgColorNegro()> 
+
+    </div>
+
+    <div id="div3" class="div-style" onmouseover=cambiarBgColorRojo() onmouseout=cambiarBgColorNegro()>  
+
+    </div>	
+	
+	<script type="text/javascript">
+	
+		function cambiarBgColorRojo()
+		{
+	
+			var elementoDiv = document.getElementsByClassName("div-style");
+			
+			for (var i=0; i<elementoDiv.length; i++) 
+			{
+				elementoDiv[i].style.backgroundColor="red";
+			}
+		}
+		
+		function cambiarBgColorNegro()
+		{
+	
+			var elementoDiv = document.getElementsByClassName("div-style");
+			
+			for (var i=0; i<elementoDiv.length; i++) 
+			{
+				elementoDiv[i].style.backgroundColor="black";
+			}
+		}
+		
+	</script>
+                
+</body>
+
+</html>

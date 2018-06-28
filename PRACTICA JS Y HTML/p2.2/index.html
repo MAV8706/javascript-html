@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>              
+
+<head>
+	
+	 <meta charset="UTF-8">
+	 
+     <title> Práctica 2.2 Javascript </title>
+
+</head>
+
+<body>
+
+<script> 
+
+	var numero = prompt("Ingrese un número:");
+
+	determinarMultiploCinco(numero);
+	
+	var resto;
+	var resultado;
+
+	function determinarMultiploCinco(numero)
+	{	
+		resto = parseInt(numero) % 5;
+
+		if(resto == 0) 
+		{
+			resultado = "Verdadero";
+		}
+
+		else
+		{
+			resultado = "Falso";
+		}
+				
+		return (resultado);
+	}
+	
+	alert(resultado);
+
+</script>
+                   
+</body>
+
+</html>

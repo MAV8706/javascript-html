@@ -1,0 +1,12 @@
+body {
+    	background-color:white;
+}
+
+.div-style {
+	background-color:black;
+	color:black;
+	width:200px;
+	height:200px;
+	padding:30px 75px;
+	border:5px;
+}

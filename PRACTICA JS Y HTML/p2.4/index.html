@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>              
+
+<head>
+	
+	 <meta charset="UTF-8">
+	 
+     <title> Práctica 2.4 Javascript </title>
+
+</head>
+
+<body>
+
+	<script> 
+
+		var multiplicador = prompt("Introduzca un número:");
+		
+		generarTabla();
+		
+		function generarTabla(num)			
+		{	
+			document.write("TABLA DEL " + multiplicador);
+			document.writeln("</br>" );
+			
+			for(var i = 0; i <= 12; i++)
+			{
+				document.writeln("</br>" );
+				document.writeln(parseInt(multiplicador) + " * " + i + " = " + (parseInt(multiplicador) * i));
+			}		
+		}
+		
+	</script>
+                   
+</body>
+
+</html>

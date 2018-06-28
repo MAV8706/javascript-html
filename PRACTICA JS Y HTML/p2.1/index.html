@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>              
+
+<head>
+	
+	 <meta charset="UTF-8">
+	 
+     <title> Práctica 2.1 Javascript </title>
+
+</head>
+
+<body>
+
+<script> 
+
+	var dolares = prompt("Ingrese la cantidad de dólares que desea cambiar:");
+
+	var tasa = prompt("Ingrese la tasa de cambio actual:");
+
+	cambiarDolarAPeso(dolares, tasa);
+
+	function cambiarDolarAPeso(dolares, tasa)
+	{	
+		var pesos;
+
+		pesos = parseInt(dolares) * parseInt(tasa);
+
+		alert("Monto en RD$: " + pesos);
+		
+		return parseInt(pesos);
+	}
+
+</script>
+                   
+</body>
+
+</html>

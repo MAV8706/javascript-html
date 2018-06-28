@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>              
+
+<head>
+	
+	 <meta charset="UTF-8">
+	 
+     <title> Práctica 2.3 Javascript </title>
+
+</head>
+
+<body>
+
+<script> 
+
+	var usuario = prompt("Usuario:");
+
+	var clave = prompt("Clave:");
+
+	var resultado;
+	
+	confirmarUserPass(usuario, clave);
+
+	function confirmarUserPass(usuario, clave)
+	{		
+		if(usuario == "admin" && clave == "admin") 
+		{
+			resultado = "Verdadero";
+		}
+
+		else
+		{
+			resultado = "Falso";
+		}
+	}
+	
+	alert(resultado);
+
+</script>
+                   
+</body>
+
+</html>
